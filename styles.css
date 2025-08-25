@@ -1,0 +1,132 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdf6f0;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 1rem;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    border-bottom: 2px solid #e0cfc2;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #7b4b2a;
+}
+
+nav {
+    margin-top: 0.5rem;
+}
+
+nav a {
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: #7b4b2a;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.hero img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.hero h2 {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    color: #5a3b2e;
+}
+
+.hero p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Gallery */
+.gallery {
+    margin: 2rem 0;
+}
+
+.gallery h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #5a3b2e;
+}
+
+.kitten-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.kitten-card {
+    background-color: #fff;
+    border: 1px solid #e0cfc2;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kitten-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.kitten-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.kitten-card h4 {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    color: #7b4b2a;
+}
+
+.kitten-card p {
+    font-size: 0.95rem;
+    margin-top: 0.3rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 2px solid #e0cfc2;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+footer a {
+    color: #7b4b2a;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

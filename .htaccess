@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# ✅ Redirect root URL to /index.php
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^$ /index.php [L,R=302]
+

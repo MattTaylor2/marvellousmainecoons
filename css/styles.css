@@ -1,0 +1,153 @@
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+/* Header layout */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff8f0;
+    padding: 12px 24px;
+    border-bottom: 2px solid #e0cfc0;
+    flex-wrap: wrap;
+}
+
+/* Left side: logo and title */
+.header-left {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.site-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    margin-right: 12px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
+
+/* Title next to logo */
+.header-left h1 {
+    font-size: 1.8em;
+    margin: 0;
+    color: #5a3e2b;
+}
+
+/* Navigation bar */
+.header-nav {
+    flex: 1;
+    text-align: right;
+}
+
+.header-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #5a3e2b;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.header-nav a:hover,
+.header-nav a.active {
+    background-color: #e0cfc0;
+}
+
+/* Main content */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #5a3e2b;
+}
+
+p.description {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* Kitten highlight section */
+.kitten-highlight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.kitten-highlight img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.kitten-highlight p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #5a3e2b;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f0f0f0;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        margin-top: 10px;
+    }
+
+    .header-nav {
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .header-left h1 {
+        font-size: 1.5em;
+    }
+
+    main {
+        padding: 0 12px;
+    }
+}
