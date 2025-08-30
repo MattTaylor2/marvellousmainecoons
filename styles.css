@@ -130,3 +130,20 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+/* Responsive styles for mobile devices */
+@media (max-width: 600px) {
+    body {
+        padding: 0 0.5rem;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+    .kitten-card {
+        padding: 0.5rem;
+    }
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}
