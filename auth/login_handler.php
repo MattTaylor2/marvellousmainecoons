@@ -1,4 +1,5 @@
 <?php
+<?php
 session_start();
 
 // Dummy credentials for testing
@@ -15,5 +16,8 @@ if ($username === $valid_username && password_verify($password, $valid_password_
     header('Location: /admin.php');
     exit;
 } else {
-    echo "<h2>Login failed</h2><p>Invalid username or password.</p><p><a href='/login.php'>Try again</a></p>";
+    // Redirect back to login with error message
+    $error = urlencode('Invalid username or password.');
+    header("Location: /login.php?error=$error");
+    exit;
 }
