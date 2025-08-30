@@ -1,9 +1,11 @@
+<?php
 <?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Marvellous Maine Coons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Add this line -->
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>

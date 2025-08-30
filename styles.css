@@ -131,6 +131,12 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Responsive styles for mobile devices */
 @media (max-width: 600px) {
     body {
@@ -145,5 +151,18 @@ footer a:hover {
     nav a {
         display: block;
         margin: 0.5rem 0;
+    }
+    main {
+        padding: 0.5rem 0;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    .description {
+        font-size: 1rem;
+    }
+    .kitten-highlight img {
+        max-width: 100%;
+        height: auto;
     }
 }
