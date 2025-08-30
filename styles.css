@@ -137,6 +137,64 @@ img {
     height: auto;
 }
 
+/* Login form styles */
+.login-container {
+    max-width: 350px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 1rem;
+    color: #7b4b2a;
+}
+
+.login-container label {
+    display: block;
+    margin: 1rem 0 0.3rem 0;
+    text-align: left;
+    font-weight: bold;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #e0cfc2;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 0.7rem;
+    background: #7b4b2a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.login-container button:hover {
+    background: #5a3b2e;
+}
+
+.error {
+    background: #ffe0e0;
+    color: #a00;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
 /* Responsive styles for mobile devices */
 @media (max-width: 600px) {
     body {
@@ -164,5 +222,8 @@ img {
     .kitten-highlight img {
         max-width: 100%;
         height: auto;
+    }
+    .login-container {
+        padding: 1rem;
     }
 }

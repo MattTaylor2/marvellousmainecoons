@@ -1,4 +1,5 @@
 <?php
+<?php
 // show errors (remove in prod)
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -28,9 +29,8 @@ $csrf_token = generate_csrf_token();
 <head>
   <meta charset="UTF-8">
   <title>Admin Login</title>
-  <style>
-    /* ... your sparkle CSS ... */
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
   <div class="login-container">
