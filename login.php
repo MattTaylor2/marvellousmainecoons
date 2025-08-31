@@ -14,7 +14,7 @@ if (!empty($_SESSION['admin_logged_in'])) {
     <meta charset="UTF-8">
     <title>Admin Login - Marvellous Maine Coons</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <?php include __DIR__ . '/includes/header.php'; ?>
